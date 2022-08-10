@@ -1,0 +1,130 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #abff4f;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: var(--viewport-height);
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: var(--background-height);
+  z-index: 0;
+  pointer-events: none;
+  transform: scale(1);
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.video:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: linear-gradient(
+    45deg,
+    rgba(0, 73, 97, 0.969) 0%,
+    rgba(171, 44, 82, 0.812) 100%
+  );
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.about {
+  /* display: flex; */
+  position: relative;
+  max-width: 100%;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: left;
+  transition: opacity 1.375s ease-in-out 0s;
+}
+
+.about h1 {
+  font-size: 3rem;
+  font-family: 'Inter', sans-serif;
+  color: '#303030';
+  margin: 0;
+}
+.button {
+  padding: 2em 0;
+  color: 'white';
+}
+.button button {
+  padding: 20px 20px;
+  border-radius: 50px;
+  border: 1px solid #d6d6d6;
+  cursor: pointer;
+  background-color: #08bdbd;
+  font-weight: bold;
+  color: #fff;
+}
+.button button:hover {
+  scale: 1.05;
+}
+.contact .contact-form {
+  display: 'flex';
+}
+.contact .contact-form div {
+  padding: 10px 0px;
+}
+.contact .contact-form div label {
+  display: 'block';
+}
+.contact .contact-form div input {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid #098484;
+  width: 20em;
+  background-color: #098484;
+  outline: none;
+  color: white;
+}
+.contact .contact-form div textarea {
+  outline: none;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid #098484;
+  width: 20em;
+  background-color: #098484;
+  color: white;
+}
+.contact .contact-form div input:hover,
+.contact .contact-form div input:focus {
+  border: 1px solid #098484;
+  outline: none;
+}
+.contact-form .button button {
+  background-color: #fff;
+  color: #098484;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
