@@ -2,17 +2,18 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #abff4f;
+  /* background-color: #abff4f; */
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
+  color: #fff;
 }
 .container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  min-height: var(--viewport-height);
-  position: relative;
+  /* min-height: var(--viewport-height); */
+  /* position: relative; */
   z-index: 2;
   overflow: hidden;
 }
@@ -51,16 +52,18 @@ body {
 
 .about {
   /* display: flex; */
-  position: relative;
+  flex: 1;
+  /* position: relative; */
   max-width: 100%;
   z-index: 1;
   align-items: center;
   justify-content: center;
-  flex-grow: 0;
-  flex-shrink: 0;
+  /* flex-grow: 0;
+  flex-shrink: 0; */
   text-align: left;
   transition: opacity 1.375s ease-in-out 0s;
   color: '#fff';
+  margin: 100px auto;
 }
 
 .about h1 {
@@ -71,64 +74,32 @@ body {
 }
 .about p {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13px;
 }
 .button {
-  padding: 2em 0;
+  display: 'flex';
   color: 'white';
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 .button button {
-  padding: 20px 20px;
-  border-radius: 50px;
-  border: 1px solid #d6d6d6;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0px solid #fff;
   cursor: pointer;
   background-color: #08bdbd;
-  font-weight: bold;
   color: #fff;
+  font-size: 14px;
 }
 .button button:hover {
   scale: 1.05;
 }
-.contact .contact-form {
-  display: 'flex';
-}
-.contact .contact-form div {
-  padding: 10px 0px;
-}
-.contact .contact-form div label {
-  display: 'block';
-}
-.contact .contact-form div input {
-  padding: 10px 10px;
-  border-radius: 10px;
-  border: 1px solid #098484;
-  width: 20em;
-  background-color: #098484;
-  outline: none;
-  color: white;
-}
-.contact .contact-form div textarea {
-  outline: none;
-  padding: 10px 10px;
-  border-radius: 10px;
-  border: 1px solid #098484;
-  width: 20em;
-  background-color: #098484;
-  color: white;
-}
-.contact .contact-form div input:hover,
-.contact .contact-form div input:focus {
-  border: 1px solid #098484;
-  outline: none;
-}
-.contact-form .button button {
-  background-color: #fff;
-  color: #098484;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+.email {
+  padding: 3px 10px;
+  border-radius: 5;
+  border: '1px solid #fff';
+  background-color: 'transparent';
+  font-size: 14;
+  color: 'white';
 }

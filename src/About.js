@@ -12,10 +12,13 @@ export default function About() {
         <input
           type="text"
           placeholder="Email address"
-          style={{ padding: 20, borderRadius: 10, border: '1px solid #d6d6d6' }}
+          className="email"
+          style={{
+            
+          }}
         />
         <span className="button" style={{ marginLeft: 20 }}>
-          <button type="submit">Get Notified</button>
+          <button type="submit">Sign Up</button>
         </span>
       </div>
     </div>
