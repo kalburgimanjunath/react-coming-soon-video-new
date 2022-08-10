@@ -60,13 +60,17 @@ body {
   flex-shrink: 0;
   text-align: left;
   transition: opacity 1.375s ease-in-out 0s;
+  color: '#fff';
 }
 
 .about h1 {
   font-size: 3rem;
-  font-family: 'Inter', sans-serif;
-  color: '#303030';
+  font-family: 'Poppins', sans-serif;
   margin: 0;
+  color: '#fff';
+}
+.about p {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .button {
   padding: 2em 0;

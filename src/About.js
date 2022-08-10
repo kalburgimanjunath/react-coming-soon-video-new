@@ -3,10 +3,10 @@ export default function About() {
   return (
     <div className="about">
       <h1>Coming soon</h1>
-      <div>
+      <p>
         Blandit massa enim nec dui nunc. Non pulvinar neque amet laoreet amet
         interdum et consequat.
-      </div>
+      </p>
       <div>{/* social icons */}</div>
       <div style={{ flex: 1, paddingTop: 20 }}>
         <input
